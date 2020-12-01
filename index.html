@@ -14,36 +14,83 @@
 			box-sizing: border-box;
 		}
 		body {
-			background: white;
+			background:  #6E3A9E;
 		}
 		header {
 			padding: 1vh;
 			text-align: center;
+            color: lightgreen;
 		}
 		nav {
 			background-color: black;
 			color: white;
+            min-height: 7vh;
 		}
 		footer {
 			background-color: black;
 			color: white;
 			padding: 2vh;
-			min-height: 10vh;
+			min-height: 20vh;
 		}
 		.container {
-			background-color: beige;
+			background-color: #52AC00;
 			padding: 1vh;
 			min-height: 60vh;
 			width: 80%;
 			margin: auto;
 		}
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            flex-basis: 20%;
+            margin: 2vh;
+        }
+        .flex-item a {
+            text-decoration: none;
+            color: black;
+        }
+        .flex-item h3 {
+            padding: 2vh;
+            background: #6E3A9E;
+            color: lightgreen;
+        }
+        .flex-item .media {
+            width: 100%;
+            background: #F58240;
+            padding: 1vh;
+        }
+        .flex-item img {
+            display: block;
+            width: 100%;
+        }
+        .flex-item p {
+            font-size: 1.25rem;
+            line-height: 2rem;
+            background:#6E3A9E;
+            color: lightgreen;
+            padding: 2vh;
+
+        }
 
 		@media only screen and (max-width:800px) {
 			.container {
 				width: 100%;
 				margin: auto;
 			}
+            .flex-container {
+                flex-wrap: wrap;
+
+            }
+            .flex-item {
+                 flex-basis: 100%;
+                 margin: 2vh;
+            }
 		}
+        
 
 
 
@@ -52,19 +99,98 @@
 	<!-- Put the Link Tags Here -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>My Page Title</title>
+	<title>Tarek's Home Page</title>
 
 </head>
 <body>
 	<header>
-		header
+		&nbsp;
 	</header>
 	<nav>
-		Placeholder
+		&nbsp;
 	</nav>
 	<div class="container">
-		<!-- Put assignment specific code here -->
-		
+        <!-- Put assignment specific code here -->
+
+        <h3>JavaScript 30</h3>
+
+		<div class="flex-container">
+
+            <div class="flex-item"> 
+                <a href="javscript/drumkit.html" target="_blank">
+
+                  <h3>JS Drum Kit</h3>
+                      <div class="media">
+                        <img src="img/drumkit.gif" alt="drum-set"  style="height: 30vh;">
+                      </div>
+                      <p>
+                          From Web Bos's JS 30 course.
+                      </p>
+
+                    </a>
+            </div>
+      
+      
+      
+            <div class="flex-item"> 
+                <a href="javscript/clockjav.html" target="_blank">
+
+              <h3>JS Clock </h3>
+                  <div class="media">
+                    <img src="img/clock.png" alt="clock"  style="height: 30vh;">
+                  </div>
+                  <p>
+                    From Web Bos's JS 30 course.
+                  </p>
+
+                </a>
+        </div>
+
+
+        <div class="flex-item"> 
+            <a href="javscript/variablejav.html" target="_blank">
+
+          <h3>JS Variables </h3>
+              <div class="media">
+                <img src="img/Variables.jpg" alt="clock"  style="height: 30vh;">
+              </div>
+              <p>
+                From Web Bos's JS 30 course.
+              </p>
+
+            </a>
+    </div>
+
+
+    <div class="flex-item"> 
+        <a href="javscript/arrayc.html" target="_blank">
+
+      <h3>Array Cardio </h3>
+          <div class="media">
+            <img src="img/cardio.png" alt="clock"  style="height: 30vh;">
+          </div>
+          <p>
+            From Web Bos's JS 30 course.
+          </p>
+
+        </a>
+</div>
+
+
+<div class="flex-item"> 
+    <a href="javscript/flexgallery.html" target="_blank">
+
+  <h3>Flex Panel </h3>
+      <div class="media">
+        <img src="img/panel.png" alt="clock" style="height: 30vh;">
+      </div>
+      <p>
+        From Web Bos's JS 30 course.
+      </p>
+
+    </a>
+</div>
+          </div>
 		
 		
 		
